@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SZOPKI - Eco-Friendly Fashion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            flex-basis: 30%;
+            margin: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product h3, .product p {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        /* Filters Section */
+        .filters {
+            margin-bottom: 20px;
+        }
+        .filters select, .filters input {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        /* Shopping Cart Section */
+        .cart {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+        /* User Account Section */
+        .user-account {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .user-account a {
+            margin-right: 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .user-account a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SZOPKI - Your Eco-Friendly Fashion</h1>
+</header>
+
+<nav>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="user-account">
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#">Cart (0)</a>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- Filter options for categories, sizes, and price range -->
+    <div class="filters">
+        <label for="category">Category: </label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="women">Women</option>
+            <option value="men">Men</option>
+            <option value="kids">Kids</option>
+        </select>
+
+        <label for="size">Size: </label>
+        <select id="size">
+            <option value="all">All Sizes</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+        </select>
+
+        <label for="price">Price Range: </label>
+        <input type="number" id="price-min" placeholder="Min Price">
+        <input type="number" id="price-max" placeholder="Max Price">
+        <button type="button">Filter</button>
+    </div>
+
+    <!-- Product list with filters applied -->
+    <div class="product-list">
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product 1">
+            <h3>Stylish Jacket</h3>
+            <p>Price: 49 PLN</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product 2">
+            <h3>Cozy Sweater</h3>
+            <p>Price: 39 PLN</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product 3">
+            <h3>Kids' Hoodie</h3>
+            <p>Price: 29 PLN</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 SZOPKI. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+</footer>
+
+</body>
+</html>
